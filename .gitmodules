@@ -1,3 +1,6 @@
 [submodule "lib/app-arena"]
 	path = lib/app-arena
 	url = git://github.com/apparena/App-Arena-Developer-Framework.git
+[submodule "lib/fb-php-sdk"]
+	path = lib/fb-php-sdk
+	url = git://github.com/facebook/php-sdk.git
