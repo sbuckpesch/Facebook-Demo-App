@@ -6,6 +6,11 @@ require_once ('init.php');
 include 'header.php';
 ?>
 
+<h1>App-Arena Demo Applikation</h1>
+
+<p>
+Klick dich durch die Applikation und sehe was du nun alles kannst.
+</p>
 
 <?php 
 // Include Footer Part
