@@ -32,4 +32,5 @@ Zend_Db_Table::setDefaultAdapter($db);
 $global=new ArrayObject();
 $global->db=$db;
 
+
 ?>

@@ -4,6 +4,3 @@
 [submodule "lib/fb-php-sdk"]
 	path = lib/fb-php-sdk
 	url = git://github.com/facebook/php-sdk.git
-[submodule "lib/Zend"]
-	path = lib/Zend
-	url = git://github.com/zendframework/zf2.git
