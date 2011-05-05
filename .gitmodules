@@ -1,0 +1,3 @@
+[submodule "lib/app-arena"]
+	path = lib/app-arena
+	url = git://github.com/apparena/App-Arena-Developer-Framework.git
