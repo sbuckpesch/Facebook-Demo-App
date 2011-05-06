@@ -12,10 +12,12 @@ include 'header.php';
 Klick dich durch die Applikation und sehe was du nun alles kannst.
 </p>
 
-<p>Config-Value <?=$global->app['config']['config_test']?></p>
+<p>Config-Element: <?php print_r($global->app);?></p>
+<!--<p>Content-Element: <?=$global->app['content']['content_test']?></p>
+<p>Design-Element: not implemented yet</p>
 
 
-<?php 
+--><?php 
 // Include Footer Part
 include 'footer.php';
 ?>
