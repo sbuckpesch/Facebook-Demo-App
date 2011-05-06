@@ -12,6 +12,9 @@ include 'header.php';
 Klick dich durch die Applikation und sehe was du nun alles kannst.
 </p>
 
+<p>Config-Value <?=$global->app['config']['config_test']?></p>
+
+
 <?php 
 // Include Footer Part
 include 'footer.php';

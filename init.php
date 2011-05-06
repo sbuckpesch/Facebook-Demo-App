@@ -40,5 +40,5 @@ require_once 'app-arena/soap_client.php';
 $apparena = new Client($aa_api_key);
 $instance_id = $helper->getInstanceId();
 $app = $apparena->getData($aa_app_id, $instance_id);
-
+$global->app = $app;
 ?>
