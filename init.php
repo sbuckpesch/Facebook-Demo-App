@@ -43,8 +43,18 @@ $instance_id = 0;
 $page_id=get_page_id();
 
 $apparena->setInstanceId($aa_app_id, $instance_id,$page_id);
-$app = $apparena->getData();
-$global->app = $app;
+$result = $apparena->getData();
 
-$global->instid=$app['instance']['id'];
+//result[0] is the error ,0 successful 1 for error
+if($result[0] == 1)
+{
+  echo $result[1];
+  exit();
+}
+else
+{
+  $global->app = $result[1];
+}
+
+$global->instid=$global->app['instance']['id'];
 ?>
