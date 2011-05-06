@@ -5,6 +5,7 @@ date_default_timezone_set('Europe/Berlin');
 
 // Load config
 require_once dirname(__FILE__).'/config.php';
+require_once dirname(__FILE__).'/functions.php';
 
 //set include path
 define("ROOT_PATH",realpath(dirname(__FILE__)));
@@ -38,8 +39,13 @@ $helper = new Helper();
 // Initialize App-Arena Connection
 require_once 'app-arena/client/soap_client.php';
 $apparena = new Client($aa_api_key);
-$instance_id = $helper->getInstanceId();
-$apparena->setInstanceId($aa_app_id, $instance_id);
+$instance_id = 0;
+$page_id=get_page_id();
+
+//var_dump($page_id);exit();
+$apparena->setInstanceId($aa_app_id, $instance_id,$page_id);
 $app = $apparena->getData();
 $global->app = $app;
+
+$global->instid=$app['instance']['id'];
 ?>
