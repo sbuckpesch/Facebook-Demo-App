@@ -42,8 +42,6 @@ $apparena = new Client($aa_api_key);
 $instance_id = 0;
 $page_id=get_page_id();
 
-var_dump($aa_app_id);
-var_dump($page_id);exit();
 $apparena->setInstanceId($aa_app_id, $instance_id,$page_id);
 $app = $apparena->getData();
 $global->app = $app;
