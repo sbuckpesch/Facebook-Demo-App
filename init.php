@@ -56,5 +56,5 @@ else
   $global->app = $result[1];
 }
 
-$global->instid=$global->app['instance']['id'];
+$global->instid=$global->app['instance']['instance_id'];
 ?>
