@@ -12,7 +12,9 @@ include 'header.php';
 Klick dich durch die Applikation und sehe was du nun alles kannst.
 </p>
 
-<p>Config-Value <?=$global->app['config']['config_test']?></p>
+<p>Config-Element: <?=$global->app['config']['config_test']?></p>
+<p>Content-Element: <?=$global->app['content']['content_test']?></p>
+<p>Design-Element: not implemented yet</p>
 
 
 <?php 
