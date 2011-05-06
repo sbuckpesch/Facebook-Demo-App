@@ -32,5 +32,8 @@ Zend_Db_Table::setDefaultAdapter($db);
 $global=new ArrayObject();
 $global->db=$db;
 
+// Initialize App-Arena Connection
+require_once 'app-arena/soap_client.php';
+
 
 ?>
