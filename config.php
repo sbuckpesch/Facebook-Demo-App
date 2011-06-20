@@ -2,9 +2,9 @@
 
 // Step 1: Database settings for facebook application
 $database_host = "localhost";
-$database_name = "ic_fl_lotterypremium";
-$database_user = "ic_fl_lotterypre";
-$database_pass = "EzSX70eNks6G2WDERzHj";
+$database_name = "aa_demo_app";
+$database_user = "aa_demo_app";
+$database_pass = "roRPdq4YDWefJ6Z8tsnv";
 
 // Step 2: Setup App-Arena API Key
 $aa_api_key = "sbuckpesch";
