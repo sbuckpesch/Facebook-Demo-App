@@ -1,23 +1,36 @@
 <?php
 // Load all config values and necessary classes
 require_once ('init.php');
-// Include Header Part
-include 'header.php';
+?>
+<!DOCTYPE div PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- Include CSS-Files -->
+<link href="lib/jFormer/jformer.css" rel="stylesheet" type="text/css" />
+<link href="lib/Facebox/src/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+<style type="text/css"><?=$session->design['base_style']?></style>
 
-/*
- * Integrate a Content from App-Arena App-Manager
- * Four Arrays of Content-Elements are available
- * 1. $global->app['instance'] 	--> All Instance Base Data
- * 2. $global->app['content'] 	--> All content elements
- * 3. $global->app['config'] 	--> All configuration values  
- * 4. $global->app['design']	--> All Design elements
- * The name in the second bracket is the "identifier" which has been setup in App-Manager.
- * E.g. echo $global->app['content']['home']; --> shows the App-Manager content-element with the identifier "home" 
- * To show all available data just uncomment the following line 
- */
-//echo '<h1>All available App-Arena data</h1><pre>', print_r($global->app), '</pre>';
+<!-- Include Javascript-Files -->
+<script src="lib/AA/js/aa_fb_framework.js?12" type="text/javascript"></script>
+<script src="lib/jquery/jquery-1.6.min.js" type="text/javascript"></script>
+<script src="lib/jFormer/jFormer.js" type="text/javascript"></script>
+<script src="lib/Facebox/src/facebox.js" type="text/javascript"></script>
 
-echo $global->app['content']['home'];
+<!-- Meta Data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+	<?php // No Fan Content (User who are not Fan of the Page see)
+	if ($session->fb_page['liked'] == 0) { ?>
+		<div class="page_non_fans_layer"> 
+			<div style="position:absolute; top:50px; left:150px;">
+					<?=$session->content['img_non_fans']?>
+			</div>
+		</div>		
+	<?php }
+
+include 'welcome.php';
 
 // Include Footer Part
 include 'footer.php';
