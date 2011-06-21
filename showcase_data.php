@@ -22,7 +22,7 @@ $cookie = get_facebook_cookie($session->instance['fb_app_id'], $session->instanc
 	<h2>All the content ($session-&gt;content)</h2>
 	<?php Zend_Debug::dump($session->content, "Content: ");?>
 	<h2>Facebook Cookie</h2>
-	<?php Zend_Debug::dump($cookie, "Cookie: ");?>
+	<?php Zend_Debug::dump($cookie, "Facebook-Cookie: ");?>
 </div>
 <?
 	//Get Facebook Cookie
