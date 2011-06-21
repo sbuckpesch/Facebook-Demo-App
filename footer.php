@@ -1,9 +1,4 @@
 <div style="clear:both;"></div>
-<?php // Show admin panel, when page admin
-	if ($session->fb_page['admin']) { ?>
-		<hr />
-		<a href="admin.php">Admin-Panel</a>
-	<?php } ?>
 <div id="fb-root"></div>
 <script type="text/javascript">
 <!--
