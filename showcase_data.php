@@ -29,6 +29,8 @@ $cookie = get_facebook_cookie($session->instance['fb_app_id'], $session->instanc
 
 	function get_facebook_cookie($app_id, $app_secret) {
 			$args = array();
+			if (!isset($_COOKIE['fbs_' . $app_id]))
+				return NULL;
 			parse_str(trim($_COOKIE['fbs_' . $app_id], '\\"'), $args);
 			ksort($args);
 			$payload = '';
