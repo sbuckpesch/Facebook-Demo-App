@@ -24,44 +24,6 @@
 </head>
 
 <body>
-	<?php // No Fan Content (User who are not Fan of the Page see)
-	if ($session->fb_page['liked'] == 0) { ?>
-		<div class="page_non_fans_layer"> 
-			<div style="position:absolute; top:50px; left:150px;">
-					<?=$session->content['img_non_fans']?>
-			</div>
-		</div>		
-	<?php } ?>
-	
 	<div id="header">
-		<div id="logo">
-			<a href="<?=$session->instance['fb_page_url']?>"><?=$session->content['img_logo']?></a>
-		</div>
-		<!--	Navigation -->
-		<div class="fix" id="nav">
-			<ul class="fix homebutton">
-				<li class="page_item navfirst">
-					<a style="background-image: url('images/home-icon-trans.png');" title="Home" href="<?=$session->fb_page['app_url']?>" target="_top" class="home">
-						Pinnwand	
-					</a>
-				</li>
-			</ul>
-			<div class="mnav dropdown fix">
-				<ul>
-					<li class="page_item page-item-12">
-						<a title="Meine Lose" href="tickets.php">Meine Lose</a>
-					</li>
-					<li class="page_item page-item-5">
-						<a title="Freunde einladen" href="invite.php">Freunde einladen</a>
-					</li>
-					<li class="page_item page-item-2">
-						<a title="Teilnahmebedigungen" href="terms_and_conditions.php">Teilnahmebedigungen</a>
-					</li>
-					<li class="page_item page-item-2">
-						<a title="Gewinner" href="winner.php">Gewinner</a>
-					</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
+		<h1>This is my header.</h1>
 	</div>
