@@ -1,6 +1,8 @@
 <?php
 include 'init.php';
 include 'header.php';
+
+$cookie = get_facebook_cookie($session->instance['fb_app_id'], $session->instance['fb_app_secret']);
 ?>
 
 <div id="content">
@@ -42,8 +44,7 @@ include 'header.php';
 			}
 			return $args;
 		}
-		
-		$cookie = get_facebook_cookie($session->instance['fb_app_id'], $session->instance['fb_app_secret']);			
+					
 
  
 include 'footer.php';
