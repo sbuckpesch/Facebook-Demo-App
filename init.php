@@ -64,7 +64,9 @@ require_once 'AA/client/soap_client.php';
 // Get Facebook User data, signed_request from session or from $_REQUEST
 // Update Session, if the user data has changed
 
-
+Zend_Debug::dump($session);
+	
+	
 $signed_request = false;
 $user = false;
 if (isset($session->fb_api['signed_request']))
