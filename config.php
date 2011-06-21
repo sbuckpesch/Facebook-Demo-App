@@ -10,7 +10,7 @@ $database_pass = "roRPdq4YDWefJ6Z8tsnv";
 $aa_api_key = "sbuckpesch";
 
 // Step 3: App-Arena App-Id
-$aa_app_id = 41;
+$aa_app_id = 58;
 
 // Advanced Settings
 $debugMode = false;
