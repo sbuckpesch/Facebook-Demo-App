@@ -49,6 +49,7 @@ require_once 'AA/client/soap_client.php';
 	$soap = new Client($aa_api_key);
 	$global->soap = $soap;
 	$aa_app = $soap->getData($aa_app_id, $aa_api_key);
+	Zend_Debug::dump($aa_app, "App Data from SOAP interface: ");
 	// Save App-Arena Data to Session
 	try {
 		$session->instance = $aa_app['instance'];
